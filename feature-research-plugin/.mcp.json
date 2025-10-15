@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "browser-use": {
+      "command": "browser-use",
+      "args": [],
+      "env": { "BROWSER_USE_HEADLESS": "true" }
+    },
+    "playwright-mcp": {
+      "command": "playwright-mcp",
+      "args": []
+    }
+  }
+}

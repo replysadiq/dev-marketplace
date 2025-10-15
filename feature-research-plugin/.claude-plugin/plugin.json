@@ -1,0 +1,22 @@
+{
+  "name": "feature-research-plugin",
+  "version": "0.1.0",
+  "description": "Interactive, iterative feature research: ask → browse → refine → roadmap.",
+  "author": { "name": "Sadiq" },
+  "commands": ["./commands/research-features.md"],
+  "agents": ["./agents/feature-researcher.md"],
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "cmd": "./hooks/preflight-clarify.sh",
+        "description": "If request is vague, prompt the agent to run a short clarification step."
+      }
+    ],
+    "CommandRun": [
+      {
+        "cmd": "./hooks/ensure-research.sh",
+        "description": "Nudge the agent to use browser MCP to gather competitor data before proposing features."
+      }
+    ]
+  }
+}

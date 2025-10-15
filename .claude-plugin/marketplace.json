@@ -1,0 +1,15 @@
+{
+  "name": "dev-marketplace",
+  "description": "Local development marketplace for testing plugins",
+  "owner": {
+    "name": "Sadiq",
+    "email": "sadiq@example.com"
+  },
+  "plugins": [
+    {
+      "name": "feature-research-plugin",
+      "description": "Interactive, iterative feature research: ask → browse → refine → roadmap.",
+      "source": "./feature-research-plugin"
+    }
+  ]
+}
