@@ -1,0 +1,14 @@
+{
+  "UserPromptSubmit": [
+    {
+      "cmd": "./preflight-clarify.sh",
+      "description": "If request is vague, prompt the agent to run a short clarification step."
+    }
+  ],
+  "CommandRun": [
+    {
+      "cmd": "./ensure-research.sh",
+      "description": "Nudge the agent to use browser MCP to gather competitor data before proposing features."
+    }
+  ]
+}
